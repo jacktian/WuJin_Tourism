@@ -8,12 +8,21 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Timer;
+
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-import wujin.tourism.android.MyAppaplication;
-import wujin.tourism.android.R;
-import wujin.tourism.android.common.NewArbean;
-import wujin.tourism.android.data.PlistHandler;
+
+import com.beyondar.android.fragment.BeyondarFragmentSupport;
+import com.beyondar.android.plugin.radar.RadarView;
+import com.beyondar.android.plugin.radar.RadarWorldPlugin;
+import com.beyondar.android.util.ImageUtils;
+import com.beyondar.android.view.OnClickBeyondarObjectListener;
+import com.beyondar.android.world.BeyondarObject;
+import com.beyondar.android.world.BeyondarObjectList;
+import com.beyondar.android.world.GeoObject;
+import com.beyondar.android.world.World;
+import com.google.gson.JsonParseException;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -32,16 +41,10 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.beyondar.android.fragment.BeyondarFragmentSupport;
-import com.beyondar.android.plugin.radar.RadarView;
-import com.beyondar.android.plugin.radar.RadarWorldPlugin;
-import com.beyondar.android.util.ImageUtils;
-import com.beyondar.android.view.OnClickBeyondarObjectListener;
-import com.beyondar.android.world.BeyondarObject;
-import com.beyondar.android.world.BeyondarObjectList;
-import com.beyondar.android.world.GeoObject;
-import com.beyondar.android.world.World;
-import com.google.gson.JsonParseException;
+import wujin.tourism.android.MyAppaplication;
+import wujin.tourism.android.R;
+import wujin.tourism.android.common.NewArbean;
+import wujin.tourism.android.data.PlistHandler;
 
 public class NewARActivity extends FragmentActivity implements OnClickBeyondarObjectListener {
 	private static final String TMP_IMAGE_PREFIX = "viewImage_";

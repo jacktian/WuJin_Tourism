@@ -34,4 +34,11 @@ public class NewArbean {
 	public void setLongitude(double longitude) {
 		this.longitude = longitude;
 	}
+
+	@Override
+	public String toString() {
+		return "{nameString:" + nameString + ", latitude:" + latitude + ", longitude:" + longitude + "}";
+	}
+	
+	
 }
