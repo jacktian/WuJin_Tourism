@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/boss_unipay_wrapper" >
+
+    <LinearLayout style="@style/boss_unipay_linear.tipframe" >
+
+        <LinearLayout style="@style/boss_unipay_linear" >
+
+            <LinearLayout
+                style="@style/boss_unipay_alert_title"
+                android:paddingBottom="28.0dip"
+                android:paddingTop="28.0dip" >
+
+                <TextView
+                    android:id="@+id/laytext"
+                    style="@style/boss_unipay_tx"
+                    android:gravity="center"
+                    android:singleLine="false" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/boss_unipay_line" />
+
+        <LinearLayout style="@style/boss_unipay_bar" >
+
+            <Button
+                android:id="@+id/daymode"
+                style="@style/boss_unipay_btn.noborder"
+                android:layout_weight="1.0" />
+
+            <View style="@style/boss_unipay_partline" />
+
+            <Button
+                android:id="@+id/nightmode"
+                style="@style/boss_unipay_btn.noborder"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

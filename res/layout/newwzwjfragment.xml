@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/laypa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/gltitlebatbg" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp" >
+
+            <Button
+                android:id="@+id/wonderful"
+                style="@style/viewpagermainbutton"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_viewpager_light"
+                android:gravity="center"
+                android:text="活动" />
+
+            <Button
+                android:id="@+id/hotspot"
+                style="@style/viewpagermainbutton"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_viewpager_black"
+                android:gravity="center"
+                android:text="攻略" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/whatsnew_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigation"
+        android:layout_gravity="center" />
+
+</RelativeLayout>

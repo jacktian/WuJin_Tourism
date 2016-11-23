@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="iconwidth">32dp</dimen>
+    <dimen name="iconheigh">48dp</dimen>
+
+</resources>

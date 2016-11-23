@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <wujin.tourism.android.customcontrol.ChildViewPager
+                    android:id="@+id/wzwj_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#ffffff"
+                    android:flipInterval="300"
+                    android:persistentDrawingCache="animation" >
+                </wujin.tourism.android.customcontrol.ChildViewPager>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:background="#52000000"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/textimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/spotandeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/gs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_weight="2"
+                        android:background="#7dc78a" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="概述"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/travel_sight" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/piaowu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="3"
+                        android:background="#aab5b1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="票务"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/piaowuicon" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spotandeat"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        android:layout_weight="5" >
+
+                        <LinearLayout
+                            android:id="@+id/hotandacti"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:orientation="horizontal" >
+
+                            <RelativeLayout
+                                android:id="@+id/gouwu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:layout_weight="2"
+                                android:background="#b5da97" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="购物"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/gouwuicon" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/tjxl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="3"
+                                android:background="#69c07c"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="推荐线路"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/travel_activity" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/zstj"
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="2"
+                                android:background="#69c07c" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="住宿推荐"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/travel_shopping" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_below="@+id/hotandacti"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                            <RelativeLayout
+                                android:id="@+id/mstj"
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:layout_weight="1"
+                                android:background="#60a869" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="美食推荐"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/travel_specialty" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/ar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="#aab5b1" >
+
+                                <TextView
+                                    android:id="@+id/arzhilu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="30dp"
+                                    android:text="A  R"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/arzhilu"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="指路"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/qjty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="#aab5b1" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="全景体验"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/travel_eat" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wujin.tourism.android"
+    android:versionCode="3"
+    android:versionName="1.2" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".MyAppaplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="wujin.tourism.android.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".childactivity.NormalTelActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".childactivity.NewWzwjitemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".childactivity.SetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".childactivity.ARActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.ShoppingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.ShoppingDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.JtActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.TjxlActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.WzitemdetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.QjtyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name=".common.DownloadService" >
+        </service>
+
+        <activity
+            android:name=".childactivity.WzglitemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.PublicwebActivtiy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.WzwjActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.JtitemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.WZviewpagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.RokeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.WZitemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.GsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.MustplayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.MapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.YXitemActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.Assessusactivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.Aboutusactivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.NewARActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.RecomandActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+      
+        <activity
+            android:name=".childactivity.ZhuSuTuiJianActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".childactivity.ZhuSuDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".childactivity.FoodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".childactivity.FoodDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".photostore.GridImageView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".photostore.Galleryphoto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="101128412" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.plus.ImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".SlidingMenuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".childactivity.PushreceiverActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="wujin.tourism.android" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote" >
+        </service>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53a2b16856240b5c7c00d6bf" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.umeng.fb.ContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="wujin.tourism.android" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".common.MyReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <category android:name="wujin.tourism.android" />
+            </intent-filter>
+        </receiver>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="db158826de30f65d971e7323" /> <!-- </>值来自开发者平台取得的AppKey -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="g1lwZrj6HMMCUEKfeK983jq9" />
+    </application>
+
+    <permission
+        android:name="wujin.tourism.android.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="wujin.tourism.android.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+</manifest>

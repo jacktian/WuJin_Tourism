@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:text="火警" />
+
+    <TextView
+        android:id="@+id/fire"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/common_strip_setting_middle"
+        android:drawableRight="@drawable/action_forward_normal"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="119" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="匪警" />
+
+    <TextView
+        android:id="@+id/fei"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/common_strip_setting_middle"
+        android:drawableRight="@drawable/action_forward_normal"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="110" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="救助" />
+
+    <TextView
+        android:id="@+id/jiuzhu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/common_strip_setting_middle"
+        android:drawableRight="@drawable/action_forward_normal"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="120" />
+
+</LinearLayout>

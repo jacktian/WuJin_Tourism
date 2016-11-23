@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ll_item_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_hotelname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="暂无数据"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp" >
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/place_ratingbar"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/ratingBar"
+                    android:text="平均:"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_pice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_1"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_juli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text=""
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toLeftOf="@id/tv_juli"
+                    android:src="@drawable/icon_openmap_mark" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/common_divider_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5.0dip" >
+
+                <RelativeLayout
+                    android:id="@+id/btn_route_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/poi_item_book_bg"
+                    android:clickable="true" >
+
+                    <Button
+                        android:id="@+id/btn_route"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/icon_open_route"
+                        android:focusable="false"
+                        android:text="到这去"
+                        android:textColor="#ff666666"
+                        android:textSize="12.0dip" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/vertical_line1"
+                    android:layout_width="1.5px"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="4.0dip"
+                    android:background="@drawable/vertial_divider_line" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_order_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/poi_item_book_bg"
+                    android:clickable="true" >
+
+                    <Button
+                        android:id="@+id/btn_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/icon_open_telephone"
+                        android:focusable="false"
+                        android:text="电话"
+                        android:textColor="#ff666666"
+                        android:textSize="12.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

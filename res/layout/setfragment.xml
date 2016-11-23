@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/appmain_color" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/titlebar" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            style="@style/LineStyle"
+            android:layout_marginTop="45dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/qkhc"
+            style="@style/settingLinearlayout" >
+
+            <TextView
+                style="@style/settinglineTextviewStyle"
+                android:text="@string/qkhc" />
+
+            <ImageView style="@style/settinglineImageviewStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LineStyle"
+            android:layout_marginLeft="20dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tjyy"
+            style="@style/settingLinearlayout" >
+
+            <TextView
+                style="@style/settinglineTextviewStyle"
+                android:text="@string/tjyy" />
+
+            <ImageView style="@style/settinglineImageviewStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/LineStyle" >
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LineStyle"
+            android:layout_marginTop="45dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gywm"
+            style="@style/settingLinearlayout" >
+
+            <TextView
+                style="@style/settinglineTextviewStyle"
+                android:text="@string/gywm" />
+
+            <ImageView style="@style/settinglineImageviewStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LineStyle"
+            android:layout_marginLeft="20dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jcgx"
+            style="@style/settingLinearlayout" >
+
+            <TextView
+                style="@style/settinglineTextviewStyle"
+                android:text="@string/jcgx" />
+
+            <ImageView style="@style/settinglineImageviewStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LineStyle"
+            android:layout_marginLeft="20dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gwpf"
+            style="@style/settingLinearlayout" >
+
+            <TextView
+                style="@style/settinglineTextviewStyle"
+                android:text="@string/gwpf" />
+
+            <ImageView style="@style/settinglineImageviewStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LineStyle"
+            android:layout_marginLeft="20dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/syfk"
+            style="@style/settingLinearlayout" >
+
+            <TextView
+                style="@style/settinglineTextviewStyle"
+                android:text="@string/syfk" />
+
+            <ImageView style="@style/settinglineImageviewStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/LineStyle" >
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LineStyle"
+            android:layout_marginTop="45dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cydh"
+            style="@style/settingLinearlayout" >
+
+            <TextView
+                style="@style/settinglineTextviewStyle"
+                android:text="@string/cydh" />
+
+            <ImageView style="@style/settinglineImageviewStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/LineStyle" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

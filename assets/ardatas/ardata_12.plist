@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>coord</key>
+		<string>{31.82902,120.062759}</string>
+		<key>nid</key>
+		<string>0</string>
+		<key>title</key>
+		<string>锦园生态养老中心(大门)</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.831727,120.062675}</string>
+		<key>nid</key>
+		<string>3</string>
+		<key>title</key>
+		<string>锦涛生态园大酒店</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.832858,120.063271}</string>
+		<key>nid</key>
+		<string>6</string>
+		<key>title</key>
+		<string>锦涛生态园垂钓休闲区</string>
+	</dict>
+</array>
+</plist>

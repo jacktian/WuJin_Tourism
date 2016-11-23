@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>coord</key>
+		<string>{31.768324,120.127356}</string>
+		<key>nid</key>
+		<string>0</string>
+		<key>title</key>
+		<string>龙潭湖生态园大门</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.768768,120.131007}</string>
+		<key>nid</key>
+		<string>3</string>
+		<key>title</key>
+		<string>酒店</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.770629,120.130306}</string>
+		<key>nid</key>
+		<string>6</string>
+		<key>title</key>
+		<string>草莓园</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.770135,120.130057}</string>
+		<key>nid</key>
+		<string>9</string>
+		<key>title</key>
+		<string>龙潭湖上品堂餐厅</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.771978,120.129654}</string>
+		<key>nid</key>
+		<string>12</string>
+		<key>title</key>
+		<string>垂钓中心</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.773693,120.130725}</string>
+		<key>nid</key>
+		<string>15</string>
+		<key>title</key>
+		<string>烧烤基地(大门)</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.773618,120.131503}</string>
+		<key>nid</key>
+		<string>18</string>
+		<key>title</key>
+		<string>烧烤基地(内部)</string>
+	</dict>
+</array>
+</plist>

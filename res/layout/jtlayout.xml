@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:id="@+id/setlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/appmain_color" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/hklx"
+                style="@style/settingLinearlayout" >
+
+                <TextView
+                    style="@style/settinglineTextviewStyle"
+                    android:text="交通-航空" />
+
+                <ImageView style="@style/settinglineImageviewStyle" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LineStyle" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tllx"
+                style="@style/settingLinearlayout" >
+
+                <TextView
+                    style="@style/settinglineTextviewStyle"
+                    android:text="交通-铁路" />
+
+                <ImageView style="@style/settinglineImageviewStyle" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LineStyle" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ctqc"
+                style="@style/settingLinearlayout" >
+
+                <TextView
+                    style="@style/settinglineTextviewStyle"
+                    android:text="交通-长途汽车" />
+
+                <ImageView style="@style/settinglineImageviewStyle" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LineStyle" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/brt"
+                style="@style/settingLinearlayout" >
+
+                <TextView
+                    style="@style/settinglineTextviewStyle"
+                    android:text="交通-BRT汽车" />
+
+                <ImageView style="@style/settinglineImageviewStyle" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LineStyle" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zj"
+                style="@style/settingLinearlayout" >
+
+                <TextView
+                    style="@style/settinglineTextviewStyle"
+                    android:text="交通-自驾" />
+
+                <ImageView style="@style/settinglineImageviewStyle" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LineStyle" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ohter"
+                style="@style/settingLinearlayout" >
+
+                <TextView
+                    style="@style/settinglineTextviewStyle"
+                    android:text="交通-其他交通" />
+
+                <ImageView style="@style/settinglineImageviewStyle" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LineStyle" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

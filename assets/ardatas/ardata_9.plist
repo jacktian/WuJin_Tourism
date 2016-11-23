@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>coord</key>
+		<string>{31.685074,119.750003}</string>
+		<key>nid</key>
+		<string>0</string>
+		<key>title</key>
+		<string>成塘书院大门</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.684869,119.749777}</string>
+		<key>nid</key>
+		<string>3</string>
+		<key>title</key>
+		<string>游客接待中心</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.68453,119.749611}</string>
+		<key>nid</key>
+		<string>6</string>
+		<key>title</key>
+		<string>榴院(客房)</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.684663,119.749348}</string>
+		<key>nid</key>
+		<string>9</string>
+		<key>title</key>
+		<string>知还居(套间)</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.684971,119.749347}</string>
+		<key>nid</key>
+		<string>12</string>
+		<key>title</key>
+		<string>元贞楼(餐厅)</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.685272,119.749735}</string>
+		<key>nid</key>
+		<string>15</string>
+		<key>title</key>
+		<string>荆院(住宿)</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.685301,119.74949}</string>
+		<key>nid</key>
+		<string>18</string>
+		<key>title</key>
+		<string>成塘书院(码头)</string>
+	</dict>
+</array>
+</plist>

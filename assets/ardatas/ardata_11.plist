@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>coord</key>
+		<string>{31.519803,120.03971}</string>
+		<key>nid</key>
+		<string>0</string>
+		<key>title</key>
+		<string>城西民族文体中心</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.51871,120.038545}</string>
+		<key>nid</key>
+		<string>3</string>
+		<key>title</key>
+		<string>清真寺</string>
+	</dict>
+	<dict>
+		<key>coord</key>
+		<string>{31.514472,120.035984}</string>
+		<key>nid</key>
+		<string>6</string>
+		<key>title</key>
+		<string>城西回民村</string>
+	</dict>
+</array>
+</plist>

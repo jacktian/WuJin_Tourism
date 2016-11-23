@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="column_bar_bg">#ffd4d4d4</item>
+    <item type="drawable" name="recommends_apps_item_nor">#00000000</item>
+    <item type="drawable" name="recommends_apps_item_pressed">#ffebebeb</item>
+    <item type="drawable" name="navbar_bg">#d855a1e5</item>
+    <item type="drawable" name="frame_bg">#fff0f0f0</item>
+    <item type="drawable" name="transparence">#00000000</item>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="1" android:drawable="@drawable/friends_sends_pictures_select_icon_unselected" />
+    <item android:maxLevel="2" android:drawable="@drawable/friends_sends_pictures_select_icon_selected" />
+   
+</level-list>

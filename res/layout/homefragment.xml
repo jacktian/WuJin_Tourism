@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/libobutton"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/webviewback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_webview_back" />
+
+        <ImageView
+            android:id="@+id/webviewforword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_webview_forword"
+            android:text="前进" />
+
+        <ImageView
+            android:id="@+id/webviewreload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_webview_refresh"
+            android:text="刷新" />
+    </LinearLayout>
+
+    <wujin.tourism.android.customcontrol.Mywebview
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/libobutton"
+        android:cacheColorHint="@color/transparent" >
+    </wujin.tourism.android.customcontrol.Mywebview>
+
+</RelativeLayout>
